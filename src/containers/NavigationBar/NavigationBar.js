@@ -32,7 +32,9 @@ const NavigationBar = () => {
         <Link to="/trending">
           <Text fontSize={HEADING}>Trending</Text>
         </Link>
-        <Text fontSize={HEADING}>Explore</Text>
+        <Link to="/explore">
+          <Text fontSize={HEADING}>Explore</Text>
+        </Link>
       </Stack>
     </Flex>
   );

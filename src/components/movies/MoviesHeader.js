@@ -5,7 +5,7 @@ import { Button } from '@chakra-ui/button';
 import { Flex, Stack, Text } from '@chakra-ui/react';
 import { Link, useHistory } from 'react-router-dom';
 
-const MoviesHeader = ({ page, nowPLayingData, title }) => {
+const MoviesHeader = ({ page, movieData, title }) => {
   const { location } = useHistory();
 
   return (
@@ -30,7 +30,7 @@ const MoviesHeader = ({ page, nowPLayingData, title }) => {
           </Link>
         )}
 
-        {page < nowPLayingData?.total_pages && (
+        {page < movieData?.total_pages && (
           <Link to={`${location?.pathname}?page=${page + 1}`}>
             <Button
               rightIcon={<ArrowForwardIcon />}

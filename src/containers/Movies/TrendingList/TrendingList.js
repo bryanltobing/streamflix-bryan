@@ -39,12 +39,8 @@ const TrendingList = () => {
   }, [page]);
 
   return (
-    <Box padding="8" boxShadow="dark-lg" backgroundColor="gray.700">
-      <MoviesHeader
-        page={page}
-        nowPLayingData={trendingData}
-        title="Trending"
-      />
+    <Box padding={['6', '8']} boxShadow="dark-lg" backgroundColor="gray.700">
+      <MoviesHeader page={page} movieData={trendingData} title="Trending" />
       <Divider orientation="horizontal" colorScheme="gray" marginY="4" />
       <MovieList list={trendingData} dataEmpty={dataEmpty} />
     </Box>

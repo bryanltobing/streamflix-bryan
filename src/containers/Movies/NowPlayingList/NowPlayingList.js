@@ -37,10 +37,10 @@ const NowPlayingList = () => {
   }, [page]);
 
   return (
-    <Box padding="8" boxShadow="dark-lg" backgroundColor="gray.700">
+    <Box padding={['6', '8']} boxShadow="dark-lg" backgroundColor="gray.700">
       <MoviesHeader
         page={page}
-        nowPLayingData={nowPLayingData}
+        movieData={nowPLayingData}
         title="Now Playing"
       />
       <Divider orientation="horizontal" colorScheme="gray" marginY="4" />
