@@ -1,6 +1,7 @@
 # StreamFlix
 
 Movie app that built using MovieDB API
+Hosted on Netlify [streamflix-bryan.netlify.app]
 ### Tech
 
 # [ReactJS] - Frontend Library
@@ -20,6 +21,7 @@ $ yarn start
    [ReactJS]: <http://reactjs.org>
    [Chakra UI]: <https://chakra-ui.com/>
    [React Router]: <https://reactrouter.com/>
+   [streamflix-bryan.netlify.app]: <https://streamflix-bryan.netlify.app/>
    
 
 
