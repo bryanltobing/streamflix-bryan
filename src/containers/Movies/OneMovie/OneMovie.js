@@ -40,6 +40,14 @@ const OneMovie = () => {
       .catch(() => {});
   }, [movieId]);
 
+  useEffect(() => {
+    if (isMovieOwned) {
+      setMovieOwned(true);
+    } else {
+      setMovieOwned(false);
+    }
+  }, [movieId, isMovieOwned]);
+
   const price = useMemo(() => {
     return getMoviePrice(movieData?.vote_average);
   }, [movieData?.vote_average]);
